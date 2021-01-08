@@ -8,26 +8,26 @@ A list of useful resources in the litter detection (mainly plastics)
 - **[TACO](http://tacodataset.org/)** is an open image dataset of waste in the wild. It contains photos of litter taken under diverse environments, from tropical beaches to London streets. These images are manually labeled and segmented according to a hierarchical taxonomy to train and evaluate object detection algorithms. The best way to know TACO is to explore our dataset:
   - statistics: 1500 images with 4784 annotations and 3167 new images that need to be annotated. These annotations are labeled in 60 categories which belong to 28 super (top) categories, more you can find [HERE](http://tacodataset.org/stats),
   - annotations: masks provided in COCO format for instance segmentation task,
-  - characteristics: images mainly came from Spain and its background is divided by 6 scene categories (photos mainly taken with rubbish in the background of sand, dirt, rocks)
-  - download: tlist of all URLs for unlabelled and labelled TACO images is available in [all_image_urls.csv](https://github.com/pedropro/TACO/blob/master/data/all_image_urls.csv),
+  - characteristics: images mainly came from Spain and its background is divided by 6 scene categories (photos mainly taken with rubbish in the background of sand, dirt, rocks),
+  - download: list of all URLs for unlabelled and labelled TACO images is available in [all_image_urls.csv](https://github.com/pedropro/TACO/blob/master/data/all_image_urls.csv),
   - licence: Both the images and annotations provided by this dataset are all under free copyright licences. While the annotations are licenced under CC BY 4.0, images may be under different specific public licences since these were obtained from different sources and users. The licence along with the original URL of each individual image are referenced in the accompanying annotation file. If the licence entry is missing, then this is by default: CC BY 4.0.
   - paper: [TACO: Trash Annotations in Context for Litter Detection](https://arxiv.org/pdf/2003.06975.pdf), March 2020,
-  - year: 2019 -- 2020.
-- **[open-litter-map](https://openlittermap.com/)**
-  - statistics: around 100 000 photos of litter taken around the world, 100+ types of litter have been pre-defined by OpenLitterMap, which are mapped by several behavioral categories of related-waste, coastal litter, litter art and global corporations
+  - year: 2019 – 2020.
+- **[OpenLitterMap](https://openlittermap.com/)** is an open, interactive, and accessible database of the world's litter and plastic pollution:
+  - statistics: around 100 000 photos of litter taken around the world, 100+ types of litter have been pre-defined by OpenLitterMap, which are mapped by several behavioral categories of related-waste, coastal litter, litter art and global corporations:
   - annotations: annotated with the classes (mainly one, but also has multilabel cases) per image,
   - characteristics: photos were taken around the world in America, Europe, Africa,  North Asia, and Australia (photos have also some geospatial data),
   - download: ?
   - licence: ODbL – Open Database Licence, see [openlittermap.com/term](openlittermap.com/term),
   - paper: (https://opengeospatialdata.springeropen.com/articles/10.1186/s40965-018-0050-y), June 2018,
   - year: website and aplication was registered in 27th July 2015, launched 15th April 2017.
-- **trashnet**
-  - statistics:
-  - annotations:
-  - characteristics:
-  - download:
-  - paper:
-  - year: 
+- **TrashNet**
+  - statistics: this dataset spans six classes: glass, paper, cardboard, plastic, metal, and trash. The dataset consists of 2527 images: 501 glass, 594 paper, 403 cardboard, 482 plastic, 410 metal, 137 trash,
+  - annotations: label type (category) per image,
+  - characteristics: the images on this dataset consist of photographs of garbage taken on a white background; the different exposure and lighting were selected for each photo, one object per photo,
+  - download: data can be found at [G. Thung, “Trashnet,” GitHub repository](https://github.com/garythung/trashnet/tree/master/data),
+  - project: [Classification of trash for recyclability status](http://cs229.stanford.edu/proj2016/report/ThungYang-ClassificationOfTrashForRecyclabilityStatus-report.pdf), 2016,
+  - year: 2016.
 - **[WaDaBa](http://wadaba.pcz.pl/)** is waste database creating by taking a photo of a platform, on which are put objects - wastes in two type of light sources: the fluorescent lamp and LED-bulb. Waste were acquisition and photographed by four months in order to collect as the most typical kinds of the municipal waste:
   - statistics: 4 000 of photographs of different type of plastics (PET, PE-HD, PVC, PE-LD, PP, PS and other) were created in the database,
   - annotations: label type (category) per image,
@@ -45,7 +45,7 @@ A list of useful resources in the litter detection (mainly plastics)
   - year: 2017.
 
 # Papers
-
+![Sorting](https://thumbs.gfycat.com/CloudyFatJaeger-mobile.mp4)
 ## Classification
 
 ## Detection
