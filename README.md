@@ -1,8 +1,15 @@
 # Trash detection - review of useful resources
-A list of useful resources in the litter detection (mainly plastics) or classification
+
+A list of useful resources in the litter classification, detection or segmentation (mainly one class - garbage).
+Created during the [detectwaste.ml](https://detectwaste.ml/) project.
+
+## Contributing
+
+Feel free to add **issue** with short description of new publication or create a **pull request** - add the new resource to the table or fill missing description.
 
 ## Relevant Repositories
-- [Datasets for litter recognition](https://github.com/AgaMiko/waste-datasets-review)
+
+- Datasets for litter recognition, detection and segmentation: [AgaMiko/waste-datasets-review](https://github.com/AgaMiko/waste-datasets-review)
 
 ## Table of Contents
 
@@ -22,8 +29,11 @@ A list of useful resources in the litter detection (mainly plastics) or classifi
 |[Wang, T. et al., 2020](https://www.mdpi.com/1424-8220/20/14/3816)| [MJU-Waste](https://github.com/realwecan/mju-waste/) | 1 | segmentation | FCN, PSPNet, CCNet, DeepLabv3 | TACO mPP - 96.07<br>MJU-Waste mPP = 97.14%  | not provided |
 
 ## Papers
+
 ![Sorting](https://upload.wikimedia.org/wikipedia/commons/4/4e/Garbage_dump_site.svg)
+
 ### Classification
+
 -  Yang, M. et al., Classification of Trash for Recyclability Status, CS229 Project Report; Stanford University: Stanford, CA, USA, 2016. [[`pdf`](http://cs229.stanford.edu/proj2016/report/ThungYang-ClassificationOfTrashForRecyclabilityStatus-report.pdf)]
      - dataset: The dataset spans six classes: glass, paper, cardboard, plastic, metal, and trash. The dataset consists of 2527 images (501 glass, 594 paper, 403 cardboard, 482 plastic, 410 metal, 137 trash), and it is annotated by category per image. The dataset consist of photographs of garbage taken on a white background; the different exposure and lighting were selected for each photo (mainly one object per photo). [[`download`]](https://github.com/garythung/trashnet/tree/master/data)
      - algorithm: Authors explore the SVM and CNN algorithms with the purpose of efficiently classifying garbage into six different recycling categories. They used an architecture similar to AlexNet but smaller in filter quantity and size.
@@ -79,6 +89,7 @@ A list of useful resources in the litter detection (mainly plastics) or classifi
     - code: [[`not provided`]]()
 
 ### Segmentation
+
 - Proença, P.F. et al., TACO: Trash Annotations in Context for Litter Detection. arXiv 2020. [[`pdf`](https://arxiv.org/pdf/2003.06975.pdf)]
   - dataset: 1500 images were collected from mainly outdoor environments such as woods, roads and beaches, and annotated by segmentation masks. There are 60 categories which belong to 28 super (top) categories. Additionaly images have background tag: water, sand, trash, vegetation, indor, pavement. [[`download`]](https://github.com/pedropro/TACO/tree/master/data)
   - algorithm: Authors adopted the Mask R-CNN implementation with Resnet-50 in a Feature Pyramid Network as a backbone with an input layer size of 1024×1024 px. Weights were started using Mask R-CNN weights trained on COCO dataset.
