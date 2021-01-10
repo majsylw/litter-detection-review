@@ -14,6 +14,7 @@ A list of useful resources in the litter detection (mainly plastics) or classifi
 |    [M. S. Rad et al., 2017](https://arxiv.org/pdf/1710.11374.pdf)   |   self-created    | 25, but model works on 3 |    detection  | OverFeat-GoogLeNet architecture | cigarette Prec. = 63.2% <br>leaves Prec. = 77,35% |   not provided   |
 | [C. Bircanoğlu et al., 2018](https://www.researchgate.net/publication/325626219_RecycleNet_Intelligent_Waste_Sorting_Using_Deep_Neural_Networks)  |[Trashnet](https://github.com/garythung/trashnet/tree/master/data)| 6 | classification |  ResNet50, MobileNet, InceptionResNetV2, DenseNet[121, 169, 201], Xception, RecycleNet| 95% Accuracy (DenseNet121) | not provided |
 | [Aral, R.A. et al., 2018](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8622212&tag=1)  |[Trashnet](https://github.com/garythung/trashnet/tree/master/data) | 6 | classification |  MobileNet, Inception-V4, DenseNet[121, 169]| 95% Accuracy (DenseNet[121, 169]) | not provided |
+| [Chu, Y. et al., 2018.](https://www.hindawi.com/journals/cin/2018/5060857/) | self-created | 5 | classification | AlexNet CNN, Multi hybird system (MHS) | 98.2% Accuracy (fixed orientation MHS) | not provided |
 | [Wang, Y. al., 2018](https://www.researchgate.net/publication/329039476_Autonomous_garbage_detection_for_intelligent_urban_management) | self-created | 1 | detection |   Fast R-CNN   |     AP = 89% | [Github](https://github.com/Nerdyvedi/Garbage-Detection) |
 | [Liu, Y. et al., 2018](https://iopscience.iop.org/article/10.1088/1742-6596/1069/1/012032/pdf) | self-created | 1 | detection | YOLOv2  |   Acc = 89.71%      | not provided |
 | [Carolis, B.D. et al., 2020](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9122693&tag=1) | self-created  | 4 |  detection | YOLOv3 | mAP@50 = 59.57% | not provided |
@@ -37,6 +38,11 @@ A list of useful resources in the litter detection (mainly plastics) or classifi
   - dataset: [Trashnet](https://github.com/garythung/trashnet/tree/master/data)
   - algorithm: In this study, authors tested well-known Deep Learning models to provide the most efficient approach. In this study, Densenet121, DenseNet169, InceptionResnetV2, MobileNet, Xception architectures were used for Trashnet dataset and __Adam__ and Adadelta were used as the optimizer in neural network models.
   - results: The most successful test accuracy rates were achieved with the fine-tuned Densenet-121 and Densenet-169 models. In the selection of the optimizer, Adam and Adadelta optimizers were tried with 100 epochs in InceptionResNetV2 model. As a result of this experiment, a higher test accuracy was obtained in the Adam optimizer.
+  - code: [[`not provided`]]()
+- Chu, Y. et al., Multilayer hybrid deep-learning method for waste classification and recycling. Comput. Intell. Neurosci. 2018. [[`pdf`](https://www.hindawi.com/journals/cin/2018/5060857/)]
+  - dataset: 5000 images with resolution 640 x 480 px were collected on plain, gray background. Each waste image is grouped with its counterpart numerical feature information as a data instance (50 categories), which is then manually labelled as either recyclable (4 main categories for recyclable part) or not.
+  - algorithm: In this study, authors tested a hybrid CNN approach for waste classification (and AlexNet CNN to compare).
+  - results: Both Multilayer hybrid system and CNN perform well when investigated items have strong image features. However, CNN performs poorly when waste items lack distinctive image features, especially for “other” waste. MHS achieves a significantly higher classification performance: the overall performance accuracies are 98.2% and 91.6%, (the accuracy of the reference model is 87.7% and 80.0%) under two different testing scenarios: the item is placed with fixed and random orientations.
   - code: [[`not provided`]]()
 
 ### Detection
