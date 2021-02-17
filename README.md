@@ -10,6 +10,7 @@ Feel free to add **issue** with short description of new publication or create a
 ## Relevant Repositories
 
 - Datasets for litter recognition, detection and segmentation: [AgaMiko/waste-datasets-review](https://github.com/AgaMiko/waste-datasets-review)
+- Detect waste in Pomerania project: [wimlds-trojmiasto/detect-waste](https://github.com/wimlds-trojmiasto/detect-waste/tree/main)
 
 ## Table of Contents
 
