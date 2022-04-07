@@ -30,6 +30,7 @@ Feel free to add **issue** with short description of new publication or create a
 |[Proença, P.F. et al., 2020](https://arxiv.org/pdf/2003.06975.pdf)| [TACO](http://tacodataset.org/) | 60, but model was tested on 10, and 1 | segmentation | Mask RCNN |1-class mAP = 15.9% <br>10-class mAP = 17.6%| [Github](https://github.com/pedropro/TACO) |
 |[Wang, T. et al., 2020](https://www.mdpi.com/1424-8220/20/14/3816)| [MJU-Waste](https://github.com/realwecan/mju-waste/) | 1 | segmentation | FCN, PSPNet, CCNet, DeepLabv3 | TACO mPP - 96.07%<br>MJU-Waste mPP = 97.14%  | :x: |
 | [Hong, J. et al., 2020](https://arxiv.org/pdf/2007.08097.pdf) | [TrashCan 1.0](https://conservancy.umn.edu/handle/11299/214865) | 4 | segmentation, detection | Mask RCNN, Faster RCNN | Faster RCNN mAP=34.5, Mask R-CNN mAP=30.0 | :x: |
+| [Ping, P. et al., 2020](https://www.worldscientific.com/doi/abs/10.1142/S0218194020400045) | self-created | 11 | detection, classification | Faster RCNN | 11-class mAP = 24% | :x: |
 
 ## Papers
 
@@ -97,6 +98,17 @@ Feel free to add **issue** with short description of new publication or create a
    - dataset: This paper construct a new dataset with 2714 images containing four classes: Garbage Bag, Garbage Dumpster, Garbage Bin and Blob (conglomerate of objects) and 1260 negative samples without any waste. The collection of the images of the dataset has been made using Google Images Download.
     - algorithm: YOLO TrashNet is used. In the experiment, authors train the last 53 layers of YOLOv3 on their dataset.
     - results: The mAP@50 was used as a metric to evaluate the error made by the network on unseen examples, and it reaches 59.57% (Garbage Bag - 40.56%, Garbage Dumpster - 64.57%, Garbage Bin - 65.01% and Blob - 68.15%).
+    - code: :x:
+- Ping, P et al., Smart Street Litter Detection and Classication Based on Faster R-CNN and Edge Computing, International Journal of Software Engineering
+and Knowledge Engineering, 2020. [[`pdf`](https://www.worldscientific.com/doi/abs/10.1142/S0218194020400045)]
+   - dataset: This paper construct a new dataset with 7059 images containing eleven classes: litter, yard debris, yard pile, tree branches, cup, bottle, tin can, plastic bag, pothole, manhole, oil stain and 5287 negative samples without any waste. The collection of the images of the dataset has been made using 5 different sources, Google Maps Street View, ImageNet, San Jose steet images collected by students, Google Images Download and Open Image Dataset.
+    - algorithm: Faster RCNN is used. Two study cases are proposed in the paper, an experiment on 6 classes and another on 11 classes but the model is only extensively tested on the 11 classes case.
+    - results:
+    
+    |mAP | mAP<sub>S</sub> | mAP<sub>M</sub> | mAP<sub>L</sub> | mAP<sub>50</sub> | mAP<sub>75</sub> | AR@1 | AR@10 | AR@100 | AR@100<sub>S</sub> | AR@100<sub>M</sub> | AR@100<sub>L</sub> |
+    |:---: | :---: | :---: | :---: | :---: | :---: | :---:  | :---:  | :---:  | :---:  | :---:  | :---:  |
+    | 24.0 | ≈ 8.0 | ≈ 14.0 | ≈ 32.0 | ≈ 44.0 | ≈ 22.0 | ≈ 27.0 | ≈ 45.0 | ≈ 49.0 | 24.0 | 42.0 | ≈ 54.0 |
+
     - code: :x:
 
 ### Segmentation
